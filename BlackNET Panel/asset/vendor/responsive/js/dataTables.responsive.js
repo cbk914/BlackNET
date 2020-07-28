@@ -775,7 +775,7 @@ $.extend( Responsive.prototype, {
 		// any columns that are not visible but can be shown
 		var collapsedClass = false;
 		for ( i=0, ien=columns.length ; i<ien ; i++ ) {
-			if ( columnsVis[i] === false && ! columns[i].never && ! columns[i].control && ! dt.column(i).visible() === false ) {
+			if ( columnsVis[i] === false && ! columns[i].never && ! columns[i].control && dt.column(i).visible() === false ) {
 				collapsedClass = true;
 				break;
 			}
